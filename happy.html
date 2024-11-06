@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <style type="text/css">
+        h2 {text-align: center;background-color: red;padding: 20px;color: white;}
+        #div0 {width: 1000px;height: 630px;margin: 10px auto;
+            background-color: rgb(240, 241, 206);padding: 50px;
+            box-shadow: 50px 50px 50px #f1b587;border-radius: 25px;}
+        #content-left{width: 400px;height: 400px;float: left;
+                      margin-right: 10px;margin-top: 30px;margin-left: 20px;}
+        #content-right{width: 500px;height: 500px;float: left;margin-bottom: 10px;}
+        #footer{width: 1000px;height: 50px;clear: both;text-align: center;}
+        img{border-radius: 25px;}
+        p{font-size: 24px;line-height: 1.5em;}
+        strong,em{color: orange;font-size: 150%;}
+        .slider-container {width: 300px;height: 300px;position: relative;overflow: hidden;}
+        .slides {display: none;position: absolute;width: 100%;height: 100%;}
+        .slides img {width: 100%;height: 100%;}
+        .slide1 {display: block;}
+    </style>
+</head>
+<body background="" text="blue">
+    <div id="div0">
+        <h2>远&nbsp;&nbsp;宁&nbsp;&nbsp;生&nbsp;&nbsp;日&nbsp;&nbsp;快&nbsp;&nbsp;乐&nbsp;！！！</h2>
+        <hr color="orange">
+        <div>
+            <div id="content-left" class="">
+                <div class="slider-container">
+                    <div class="slides slide1">
+                        <img src="11.jpg" alt="Image 1">
+                    </div>
+                    <div class="slides">
+                        <img src="22.jpg" alt="Image 2">
+                    </div>
+                    <div class="slides">
+                        <img src="33.jpg" alt="Image 3">
+                    </div>
+                    <div class="slides">
+                        <img src="44.jpg" alt="Image 4">
+                    </div>
+                    <div class="slides">
+                        <img src="55.jpg" alt="Image 5">
+                    </div>
+                    <div class="slides">
+                        <img src="66.jpg" alt="Image 6">
+                    </div>
+                    <div class="slides">
+                        <img src="77.jpg" alt="Image 7">
+                    </div>
+                    <div class="slides">
+                        <img src="88.jpg" alt="Image 8">
+                    </div>
+                    <div class="slides">
+                        <img src="99.jpg" alt="Image 9">
+                    </div>
+                    <div class="slides">
+                        <img src="10.jpg" alt="Image 10">
+                    </div>
+                    <div class="slides">
+                        <img src="a.jpg" alt="Image 11">
+                    </div>
+                </div>
+                <br><br>
+                <audio controls="controls" loop>
+                    <source src="星光就在前方.mp3" type="audio/ogg">
+                </audio>
+            </div>
+
+            <div id="content-right" class="">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这个特别的日子里，让我送上最诚挚的祝福：
+                    愿你的每一个梦想都如期而至；愿你的每一次微笑都闪耀幸福的光芒；
+                    愿你在新的一岁里收获更多的成功与快乐，遇见更多美好的事物和人情。
+                    希望你的人生之旅充满欢笑与温馨，无论遇到什么挑战，都能勇敢面对，收获成长与坚强。
+                    不管未来将去往何方，愿你永远怀抱着希望，散发出勇气与坚定。
+                    <strong><em>生日快乐！</em></strong>
+                    愿你的每一天都充满阳光和温暖！</p>
+                </div>
+        </div>
+        
+        <div>
+            <div id="footer" class="">版权所有&copy;贤新集团出版社</div>
+        </div>
+
+        <script type="text/javascript">
+            var slideindex=0;
+            function ChangeSlides(){
+                slideindex++;
+                var slidesArr=document.getElementsByClassName("slides");
+                if(slideindex>=slidesArr.length) slideindex=0;
+                for(var i=0;i<slidesArr.length;i++){
+                    slidesArr[i].style.display='none';
+                }
+                slidesArr[slideindex].style.display='block';
+            }
+            setInterval(ChangeSlides,2000);
+        </script>
+        <script type="text/javascript">
+            alert("远宁生日快乐！")
+        </script>
+    </div>
+</body>
+</html>
